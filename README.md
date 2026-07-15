@@ -10,7 +10,7 @@ This repository leverages GitHub Pages to deliver secure, responsive static asse
 
 | Offer / Campaign | Live URL | Target Audience |
 | :--- | :--- | :--- |
-| **Secrets of the BIG Dogs** | [View Page](https://toffanin.github.io/digital-market-resources/secrets-of-the-big-dogs/) | Internet Marketers & Traffic Seekers |
+| **Secrets of the BIG Dogs** | [View Page](./secrets-of-the-big-dogs/) | Internet Marketers & Traffic Seekers |
 
 ---
 
