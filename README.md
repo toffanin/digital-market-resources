@@ -11,6 +11,7 @@ This repository leverages GitHub Pages to deliver secure, responsive static asse
 | Offer / Campaign | Live URL | Target Audience |
 | :--- | :--- | :--- |
 | **Secrets of the BIG Dogs** | [View Page](./secrets-of-the-big-dogs/) | Internet Marketers & Traffic Seekers |
+| **Melio Payments** | [View Page](./melio/) | Small Businesses, Freelancers & Startups |
 
 ---
 
