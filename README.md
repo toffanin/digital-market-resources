@@ -1,38 +1,31 @@
-# Digital Market Resources
+# Digital Market Resources Hub
 
-Welcome to the central repository for hosting high-performance, fast-loading bridge pages, custom redirect scripts, and marketing landing pages. 
-
-This repository leverages GitHub Pages to deliver secure, responsive static assets with optimal global loading times—maximising conversions across various traffic networks and ad platforms.
+Welcome to the **Digital Market Resources** repository—a curated collection of high-converting, compliant bridge pages and promotional assets for B2B SaaS, AI automation, and digital marketing platforms hosted via GitHub Pages.
 
 ---
 
 ## 🚀 Active Campaigns
 
-| Offer / Campaign | Live URL | Target Audience |
-| :--- | :--- | :--- |
-| **Secrets of the BIG Dogs** | [View Page](./secrets-of-the-big-dogs/) | Internet Marketers & Traffic Seekers |
-| **Melio Payments** | [View Page](./melio/) | Small Businesses, Freelancers & Startups |
+| Campaign | Category | Live Bridge Page | Focus / Value Proposition |
+| :--- | :--- | :--- | :--- |
+| **Melio** | B2B Accounts Payable | [View Page](./melio/) | AI-driven B2B payment platform, free ACH transfers, card-pay flexibility, and QuickBooks/Xero sync. |
+| **Reply.io** | AI Sales Engagement | [View Page](./reply/) | Multichannel cold outreach automation, AI email composition, and scalable B2B lead acquisition. |
+| **Secrets of the Big Dogs** | Digital Marketing & Traffic | [View Page](./secrets-of-the-big-dogs/) | Classic 20+ year proven blueprint for automated traffic generation, list-building, and funnel math. |
 
 ---
 
-## 🛠️ How to Deploy New Pages
+## 📂 Directory Structure
 
-To add a new promotional campaign or PartnerStack bridge page (e.g., Melio, Apollo, or Replay) to this hub, use one of the two structures below:
-
-### Method A: Single File (Clean URL)
-1. Create a new HTML file in the root directory (e.g., `melio.html`).
-2. Your live URL will instantly be: 
-   `https://toffanin.github.io/digital-market-resources/melio.html`
-
-### Method B: Dedicated Sub-folder (Cleanest Directory Structure)
-1. Create a new folder (e.g., `melio/`).
-2. Inside that folder, create a file named exactly `index.html`.
-3. Your live URL will be: 
-   `https://toffanin.github.io/digital-market-resources/melio/`
-
----
-
-## 📋 Technical Features
-* **Zero-Dependency Static HTML:** Crafted for rapid mobile-first rendering.
-* **Global CDN Delivery:** Built on GitHub Pages infrastructure for lightning-fast delivery inside traffic exchange frames (SOTAM, HercuList, Bzillion Club).
-* **Frame-Friendly Architecture:** Fully compliant with standard `iframe` countdown systems used by major traffic networks.
+```text
+digital-market-resources/
+├── README.md
+├── index.html                  # Central Resource Hub Landing Page
+├── melio/
+│   ├── index.html              # Melio Bridge Page
+│   └── privacy.html            # Campaign Privacy Policy
+├── reply/
+│   ├── index.html              # Reply.io Bridge Page
+│   └── privacy.html            # Campaign Privacy Policy
+└── secrets-of-the-big-dogs/
+    ├── index.html              # Secrets of the Big Dogs Bridge Page
+    └── privacy.html            # Campaign Privacy Policy
