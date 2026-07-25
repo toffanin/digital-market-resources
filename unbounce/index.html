@@ -3,77 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unbounce | Agile Conversion Infrastructure for Cross-Border Scaleups</title>
+  <title>Unbounce | The Operational Standard for Sovereign Market Validation | ARCHES Stack</title>
   <style>
     :root {
-      --primary: #003366;
-      --accent: #0066cc;
-      --bg: #f8f9fa;
-      --text: #222222;
-      --card-bg: #ffffff;
-      --border: #e2e8f0;
+      --primary-navy: #002D62; /* Standard ARCHES Navy */
+      --accent-blue: #0076CE; /* Operational Blue */
+      --validation-green: #228B22; /* Success Metric */
+      --bg-gray: #FBFDFF; /* Precision Canvas */
+      --text-dark: #1A1A1A;
+      --border-light: #EDF2F7;
+      --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background-color: var(--bg); padding: 0; margin: 0; }
-    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-    header { text-align: center; padding-bottom: 30px; border-bottom: 1px solid var(--border); }
-    .badge { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.85rem; font-weight: 600; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-    h1 { font-size: 2.2rem; color: var(--primary); margin-bottom: 12px; font-weight: 700; }
-    .subtitle { font-size: 1.15rem; color: #555; max-width: 750px; margin: 0 auto 24px auto; }
-    .cta-btn { display: inline-block; background-color: var(--accent); color: #ffffff; text-decoration: none; font-weight: 600; font-size: 1.1rem; padding: 14px 28px; border-radius: 6px; transition: background 0.2s ease; margin-top: 10px; }
-    .cta-btn:hover { background-color: #004999; }
-    .content-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 32px; margin: 30px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-    h2 { color: var(--primary); font-size: 1.4rem; margin-bottom: 16px; border-bottom: 2px solid #f0f0f0; padding-bottom: 8px; }
-    ul { list-style-type: none; padding-left: 0; }
-    li { margin-bottom: 12px; padding-left: 24px; position: relative; }
-    li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
-    .quote-box { background-color: #f0f7ff; border-left: 4px solid var(--accent); padding: 16px 20px; margin: 24px 0; font-style: italic; border-radius: 0 6px 6px 0; }
-    footer { border-top: 1px solid var(--border); padding-top: 24px; margin-top: 40px; font-size: 0.88rem; color: #666; }
-    footer a { color: var(--accent); text-decoration: none; }
+    
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+      line-height: 1.65; 
+      color: var(--text-dark); 
+      background-color: var(--bg-gray); 
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 60px 24px; }
+
+    header { text-align: center; padding-bottom: 50px; border-bottom: 1px solid var(--border-light); }
+    
+    .arches-marker { 
+      display: inline-flex; 
+      align-items: center; 
+      gap: 8px; 
+      color: var(--accent-blue); 
+      font-weight: 700; 
+      font-size: 0.95rem; 
+      text-transform: uppercase; 
+      letter-spacing: 1.5px; 
+      margin-bottom: 16px; 
+    }
+    
+    .arches-marker::before { 
+      content: ''; 
+      display: inline-block; 
+      width: 12px; 
+      height: 12px; 
+      background-color: var(--accent-blue); 
+      border-radius: 2px; 
+    }
+
+    h1 { 
+      font-size: 2.8rem; 
+      color: var(--primary-navy); 
+      margin-bottom: 16px; 
+      font-weight: 800; 
+      line-height: 1.2; 
+      letter-spacing: -1px;
+    }
+
+    .strategic-subtitle { 
+      font-size: 1.25rem; 
+      color: #4A5568; 
+      max-width: 800px; 
+      margin: 0 auto 32px auto; 
+      font-weight: 400;
+    }
+
+    .cta-container { margin-top: 10px; }
+
+    .cta-btn-primary { 
+      display: inline-block; 
+      background-color: var(--accent-blue); 
+      color: #ffffff; 
+      text-decoration: none; 
+      font-weight: 600; 
+      font-size: 1.15rem; 
+      padding: 16px 36px; 
+      border-radius: 6px; 
+      box-shadow: 0 4px 6px rgba(0, 118, 206, 0.2);
+      transition: all 0.2s ease-in-out; 
+    }
+
+    .cta-btn-primary:hover { 
+      background-color: var(--primary-navy); 
+      box-shadow: 0 6px 8px rgba(0, 45, 98, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .macro-framing {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 40px;
+      margin: 40px 0;
+      box-shadow: var(--card-shadow);
+    }
+
+    .problem-statement {
+      font-size: 1.1rem;
+      color: #4A5568;
+      border-left: 4px solid #E2E8F0;
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    h2.operational-standard { 
+      color: var(--primary-navy); 
+      font-size: 1.6rem; 
+      margin-bottom: 24px; 
+      font-weight: 700;
+    }
+
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .framework-card {
+      background: #F9FAFB;
+      border: 1px solid #EDF2F7;
+      border-radius: 6px;
+      padding: 24px;
+    }
+
+    .framework-card h3 {
+      color: var(--accent-blue);
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .framework-card p {
+      font-size: 0.95rem;
+      color: #4A5568;
+    }
+
+    .validation-quote { 
+      background-color: #F0F9FF; 
+      border-radius: 6px;
+      padding: 24px; 
+      margin: 30px 0; 
+      font-style: italic; 
+      color: var(--primary-navy);
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    footer { 
+      border-top: 1px solid var(--border-light); 
+      padding-top: 30px; 
+      margin-top: 60px; 
+      font-size: 0.9rem; 
+      color: #718096; 
+    }
+    
+    footer strong { color: var(--text-dark); }
+    
+    footer a { 
+      color: var(--accent-blue); 
+      text-decoration: none; 
+      font-weight: 500;
+    }
+    
     footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      .container { padding: 40px 20px; }
+      .macro-framing { padding: 24px; }
+    }
   </style>
 </head>
 <body>
 
   <div class="container">
     <header>
-      <span class="badge">ARCHES Operational Stack: Conversion Layer</span>
-      <h1>Unbounce: Agile Conversion Infrastructure</h1>
-      <p class="subtitle">Accelerating international market validation for deep-tech innovators and EU scaleups through smart landing page automation and continuous conversion testing.</p>
-      <a href="https://unbounce.partnerlinks.io/gh5argadattc" target="_blank" rel="nofollow noopener" class="cta-btn">Explore Unbounce Solutions &rarr;</a>
+      <div class="arches-marker">The Brussels Key | Operational Execution</div>
+      <h1>Stop Stalling in the Pilot Trap: Accelerate Sovereign Market Validation with Unbounce.</h1>
+      <p class="strategic-subtitle">Instantly align high-level policy fluency with ruthlessly efficient, AI-driven operational execution across transatlantic and global corridors.</p>
+      <div class="cta-container">
+        <a href="https://unbounce.partnerlinks.io/gh5argadattc" target="_blank" rel="nofollow noopener" class="cta-btn-primary">Activate Your Validation Engine &rarr;</a>
+      </div>
     </header>
 
     <main>
-      <section class="content-card">
-        <h2>Bridging Market Entry with Conversion Speed</h2>
-        <p>When expanding into foreign target markets (such as North America, India, or the UK), deep-tech companies cannot afford weeks of engineering overhead just to test localized messaging and value propositions. Rapid deployment and real-time data feedback are critical to overcoming the international commercialisation gap.</p>
+      <div class="macro-framing">
+        <h2>The Critical Step: From Regulatory Approval to Market Dominance</h2>
+        <p class="problem-statement">Every year, strong EU deep-tech scaleups secure initial pilot deals across international corridors, only to stall before reaching enterprise maturity. Why? They treat commercialisation as a transactional brokerage exercise, rather than as an operational discipline in its own right. Relying on engineering teams for market testing is a systemic bottleneck.</p>
         
-        <div class="quote-box">
-          "Agile conversion infrastructure allows scaleups to test, adapt, and validate market demand in days rather than quarters—removing technical bottlenecks from the expansion strategy."
+        <h2 class="operational-standard">Unbounce: The Agile Conversion Infrastructure Standard</h2>
+        <p>Within the ARCHES Operational Framework, we utilize Unbounce as the benchmark for Agile Conversion Infrastructure. It is the designated operational standard for rapid, compliant, and data-rigorous market validation—bypassing technical dependencies to secure institutional buy-in and enterprise contracts.</p>
+        
+        <div class="framework-grid">
+          <div class="framework-card">
+            <h3>Operational Bypass for Dev Teams</h3>
+            <p>Empower expansion leaders to deploy, refine, and optimize high-converting, audit-ready landing pages in days, not quarters, removing engineering bottlenecks from the critical path.</p>
+          </div>
+          <div class="framework-card">
+            <h3>Dynamic Localisation (Sovereign Resonance)</h3>
+            <p>Utilize Smart Traffic and AI to automatically serve market-specific variants, aligning value propositions with local regulatory realities and enterprise expectations (e.g., US vs. EU data privacy framing).</p>
+          </div>
+          <div class="framework-card">
+            <h3>Hypothesis-Driven Pivot Engine (Data Rigor)</h3>
+            <p>Execute structured Multivariate Testing to validate localized pricing models, value propositions, and pilot pitch messaging with statistical precision before full-scale commercial commitment.</p>
+          </div>
+          <div class="framework-card">
+            <h3>Enterprise Operational Integration</h3>
+            <p>Secure the pilot data pipeline with seamless integrations into enterprise CRM and outreach engines (like Reply.io), ensuring automated lead processing meets compliance standards.</p>
+          </div>
         </div>
+      </div>
 
-        <h2>Core Capabilities for Scaling Teams</h2>
-        <ul>
-          <li><strong>AI-Powered Page Builder:</strong> Build, publish, and deploy high-converting landing pages tailored to regional enterprise requirements without developer dependencies.</li>
-          <li><strong>Smart Traffic &amp; Dynamic Text:</strong> Automatically route visitors to the page variant most likely to convert based on location, device, and search intent.</li>
-          <li><strong>A/B &amp; Multivariate Testing:</strong> Test value propositions, pricing models, and pilot pitch messaging in real time with statistical precision.</li>
-          <li><strong>Enterprise Integration:</strong> Connect directly into your outreach and CRM engines (including Reply.io, HubSpot, and Salesforce) for automated lead processing.</li>
-        </ul>
-      </section>
-
-      <section style="text-align: center; margin: 40px 0;">
-        <h2>Ready to Deploy Your Next Market Test?</h2>
-        <p style="margin: 12px 0 20px 0; color: #555;">Start building agile landing pages backed by smart conversion intelligence.</p>
-        <a href="https://unbounce.partnerlinks.io/gh5argadattc" target="_blank" rel="nofollow noopener" class="cta-btn">Start Your Free Unbounce Trial</a>
-      </section>
+      <div class="validation-quote">
+        "Successful sovereign tech commercialisation requires treating conversion infrastructure with the same forensic discipline as the underlying technology. Unbounce provides the standard for that execution."
+      </div>
     </main>
 
     <footer>
-      <p><strong>Affiliate Disclosure (FTC Compliant):</strong> This is an independent promotional bridge page for Unbounce. We may receive a referral commission if you sign up via <a href="https://unbounce.partnerlinks.io/gh5argadattc" target="_blank" rel="nofollow noopener">https://unbounce.partnerlinks.io/gh5argadattc</a> at no additional cost to you. © 2026 ARCHES Resources Hub. This site is independently managed.</p>
-      <p style="margin-top:12px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
-        <a href="docs/privacy.html" style="text-decoration: underline;">Privacy Policy</a> • 
-        <a href="docs/terms.html" style="text-decoration: underline;">Terms &amp; Conditions</a> • 
-        <a href="https://unbounce.partnerlinks.io/gh5argadattc" target="_blank" rel="nofollow noopener" style="text-decoration: underline;">unbounce.com</a>
+      <p><strong>Affiliate Disclosure (FTC & Sovereign Compliance):</strong> ARCHES Resources Hub operates as an independent strategizing authority. This informational bridge page promotes Unbounce as an operational standard within our defined framework. We may receive a referral commission if you activate a solution via <a href="https://unbounce.partnerlinks.io/gh5argadattc" target="_blank" rel="nofollow noopener">https://unbounce.partnerlinks.io/gh5argadattc</a>. This financial support enables our continuous sovereign policy-to-execution analysis. We maintain independent advisory rigor.</p>
+      <p style="margin-top:16px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: center;">
+        <a href="docs/privacy.html" style="text-decoration: underline;">Privacy Policy & GDPR</a> • 
+        <a href="docs/terms.html" style="text-decoration: underline;">Terms of Advisory Use</a> • 
+        <a href="https://unbounce.partnerlinks.io/gh5argadattc" target="_blank" rel="nofollow noopener" style="text-decoration: underline;">Verify unbounce.com Solution</a>
       </p>
     </footer>
   </div>
