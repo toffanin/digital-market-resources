@@ -18,7 +18,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,Inter,Segoe UI,Roboto,Helvetic
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(16px) saturate(180%);border-bottom:1px solid var(--border)}
 .nav{height:70px;display:flex;justify-content:space-between;align-items:center}
 .logo{display:flex;gap:12px;align-items:center;font-weight:900;letter-spacing:-.03em}
-.logo-mark{width:34px;height:34px;background:var(--indigo);color:#fff;border-radius:9px;display:grid;place-items:center;font-size:14px}
+.logo-mark{width:34px;height:34px;background:var(--indigo);color:#fff;border-radius:99px;display:grid;place-items:center;font-size:14px}
 .phase-badge{font-size:10.5px;font-weight:800;letter-spacing:.14em;background:var(--indigo);color:#a5b4fc;padding:6px 10px;border-radius:999px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:#fff;padding:14px 26px;border-radius:11px;font-weight:700;font-size:14.5px;transition:.2s;text-decoration:none;border:0;cursor:pointer}
 .btn:hover{background:#4338ca;transform:translateY(-1px);box-shadow:var(--shadow)}
@@ -146,8 +146,15 @@ footer{padding:32px 0;border-top:1px solid var(--border);font-size:11.5px;color:
 </main>
 
 <footer>
-  <div class="container">
+  <div class="container" style="display:flex;flex-direction:column;gap:12px">
     <p><strong>ARCHES 4-D Innovation Framework:</strong> DISCOVER Phase — Automated B2B Matchmaking, Partner Scouting, Outbound Ecosystem Building. This independent bridge page promotes Reply.io as an Outreach Automation Engine for deep-tech & innovation ecosystems. Managed by ARCHES.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);padding-top:12px;flex-wrap:wrap;gap:12px;font-size:11.5px;color:var(--muted)">
+      <span>© 2026 ARCHES. All rights reserved.</span>
+      <div style="display:flex;gap:16px">
+        <a href="/privacy.html" style="color:var(--muted);text-decoration:underline">Privacy Policy</a>
+        <a href="/terms.html" style="color:var(--muted);text-decoration:underline">Terms of Service</a>
+      </div>
+    </div>
   </div>
 </footer>
 
