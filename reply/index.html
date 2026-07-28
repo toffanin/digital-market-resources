@@ -1,157 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reply.io | Automated Tech Scouting & Matchmaking Engine | ARCHES Ecosystem</title>
-<meta name="description" content="ARCHES 4-D DISCOVER Phase: Reply.io enables R&D leaders, EIC grantees & Open Innovation Directors to automate partner scouting, multi-channel matchmaking and strategic stakeholder engagement at scale. GDPR compliant.">
-<style>
-:root{
- --indigo:#1e1b4b; --indigo-2:#312e81; --blue:#4f46e5; --blue-light:#eef2ff;
- --text:#0f172a; --muted:#64748b; --bg:#ffffff; --bg-alt:#f8fafc;
- --border:#e2e8f0; --radius:18px; --shadow:0 12px 40px rgba(30,27,75,.08);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
-.container{max-width:1180px;margin:0 auto;padding:0 24px}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(16px) saturate(180%);border-bottom:1px solid var(--border)}
-.nav{height:70px;display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;gap:12px;align-items:center;font-weight:900;letter-spacing:-.03em}
-.logo-mark{width:34px;height:34px;background:var(--indigo);color:#fff;border-radius:99px;display:grid;place-items:center;font-size:14px}
-.phase-badge{font-size:10.5px;font-weight:800;letter-spacing:.14em;background:var(--indigo);color:#a5b4fc;padding:6px 10px;border-radius:999px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:#fff;padding:14px 26px;border-radius:11px;font-weight:700;font-size:14.5px;transition:.2s;text-decoration:none;border:0;cursor:pointer}
-.btn:hover{background:#4338ca;transform:translateY(-1px);box-shadow:var(--shadow)}
-.btn-dark{background:var(--indigo);color:#fff}
-.btn-ghost{background:var(--bg-alt);border:1px solid var(--border);color:var(--text)}
-.eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
-.hero{padding:84px 0 64px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(34px,4.8vw,56px);line-height:.95;letter-spacing:-.04em}
-.hero h1 span{background:linear-gradient(90deg,var(--blue),#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.sub{font-size:18px;color:var(--muted);margin:18px 0 26px;max-width:600px}
-.grid{display:grid;gap:20px}
-.grid-2{grid-template-columns:repeat(2,1fr)}
-.grid-4{grid-template-columns:repeat(4,1fr)}
-.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:.2s}
-.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.pill{font-size:11px;font-weight:700;letter-spacing:.08em;padding:5px 10px;border-radius:999px;background:var(--blue-light);color:var(--blue);display:inline-block;margin-bottom:10px}
-.section{padding:84px 0}
-.section-alt{background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.head{max-width:740px;margin:0 auto 44px;text-align:center}
-.head h2{font-size:clamp(28px,3.2vw,40px);line-height:1.05;letter-spacing:-.03em}
-.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.vs .bad{background:#fef2f2;border:1px solid #fee2e2;border-radius:var(--radius);padding:24px}
-.vs .good{background:#f0fdf4;border:1px solid #dcfce7;border-radius:var(--radius);padding:24px}
-.trust-bar{background:var(--indigo);color:#c7d2fe;border-radius:20px;padding:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
-.cta{background:linear-gradient(135deg,var(--indigo) 0%,var(--indigo-2) 100%);border-radius:24px;padding:64px 32px;text-align:center;color:#fff;position:relative;overflow:hidden}
-.cta h2{font-size:clamp(28px,3vw,42px);line-height:1.05;max-width:720px;margin:0 auto}
-footer{padding:32px 0;border-top:1px solid var(--border);font-size:11.5px;color:var(--muted)}
-@media(max-width:980px){.hero{grid-template-columns:1fr;padding:48px 0 32px} .grid-2,.grid-4,.vs{grid-template-columns:1fr}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reply.io | ARCHES 4-D Framework - Automated B2B Outreach & Partner Discovery</title>
+    <meta name="description" content="Automate B2B partner discovery, multi-channel outreach, and AI lead generation for EU R&D ecosystems and open innovation calls with Reply.io.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #5E5CE6; --dark: #0A0F1F; --gray: #5A6478; --light: #F4F7FC; --accent: #00D1A0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: var(--dark); line-height: 1.6; background: #fff; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        /* HERO SECTION */
+        .hero { background: radial-gradient(120% 120% at 0% 0%, #ECEBFF 0%, #FFFFFF 65%), var(--light); padding: 100px 0 80px; border-bottom: 1px solid #E2E8F0; }
+        .eyebrow { display: inline-block; background: var(--dark); color: #fff; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px; font-weight: 600; }
+        .hero h1 { font-size: 52px; line-height: 1.05; letter-spacing: -1.5px; font-weight: 800; max-width: 820px; margin-bottom: 20px; }
+        .hero h1 span { color: var(--primary); }
+        .hero .sub { font-size: 20px; color: var(--gray); max-width: 700px; margin-bottom: 32px; }
+        .cta-group { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+        .btn-primary { background: var(--primary); color: #fff; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; transition: all .2s; box-shadow: 0 8px 24px rgba(94,92,230,0.25); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(94,92,230,0.35); background: #4B48D6; }
+        .cta-note { font-size: 13px; color: var(--gray); }
+        /* PROBLEM VS SOLUTION GRID */
+        .comparison { padding: 90px 0; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+        .card-problem, .card-solution { border-radius: 16px; padding: 36px; }
+        .card-problem { background: #FFF5F5; border: 1px solid #FFD6D6; }
+        .card-solution { background: #F3F2FF; border: 1px solid #D4D1FF; }
+        .label { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
+        .card-problem .label { color: #C53030; }
+        .card-solution .label { color: var(--primary); }
+        .card h3 { font-size: 24px; margin-bottom: 16px; letter-spacing: -0.5px; }
+        .card ul { list-style: none; }
+        .card li { padding: 8px 0; display: flex; gap: 10px; font-size: 16px; color: #2D3748; }
+        /* 4-D PILLARS SECTION */
+        .pillars { background: var(--dark); background-color: #0A0F1F; color: #fff; padding: 100px 0; }
+        .pillars h2 { font-size: 40px; text-align: center; letter-spacing: -1px; margin-bottom: 12px; }
+        .pillars .sub-title { text-align: center; color: #A0AEC0; max-width: 720px; margin: 0 auto 60px; font-size: 18px; }
+        .pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .pillar { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 28px; transition: all .2s; }
+        .pillar:hover { background: rgba(255,255,255,0.08); border-color: rgba(94,92,230,0.4); }
+        .pillar .icon { font-size: 11px; font-weight: 800; letter-spacing: 1px; color: var(--accent); margin-bottom: 16px; display: block; }
+        .pillar h4 { font-size: 18px; margin-bottom: 12px; line-height: 1.3; color: #fff; }
+        .pillar p { font-size: 14px; color: #A0AEC0; line-height: 1.6; }
+        /* ENTERPRISE TRUST GRID */
+        .trust { padding: 80px 0; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0; }
+        .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center; }
+        .trust-item strong { display: block; font-size: 16px; margin-bottom: 6px; color: var(--dark); }
+        .trust-item span { font-size: 14px; color: var(--gray); }
+        /* FINAL CTA SECTION */
+        .final-cta { padding: 100px 0; text-align: center; background: var(--light); }
+        .final-cta h2 { font-size: 44px; letter-spacing: -1.2px; line-height: 1.1; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .final-cta p { font-size: 18px; color: var(--gray); max-width: 620px; margin: 0 auto 36px; }
+        /* FOOTER */
+        footer { padding: 40px 0; font-size: 13px; color: var(--gray); background: #fff; }
+        .footer-links { display: flex; gap: 20px; margin-bottom: 16px; flex-wrap: wrap; }
+        .footer-links a { color: var(--gray); text-decoration: none; }
+        .footer-links a:hover { text-decoration: underline; color: var(--dark); }
+        .disclosure { background: #F7F8FA; border: 1px solid #E9ECF5; border-radius: 8px; padding: 16px; margin-top: 20px; font-size: 12px; line-height: 1.6; }
+        @media(max-width: 900px) {
+            .grid-2, .pillar-grid, .trust-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 38px; }
+            .final-cta h2 { font-size: 32px; }
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <div class="container nav">
-    <div class="logo"><div class="logo-mark">R</div> REPLY.IO <span style="font-weight:500;color:var(--muted)">× ARCHES</span> <span class="phase-badge">PHASE 01 • DISCOVER</span></div>
-    <a href="https://get.reply.io/nkm89iofcgne" target="_blank" rel="noopener noreferrer" class="btn" style="padding:10px 18px">Activate Matchmaking Engine</a>
-  </div>
-</header>
-
-<main>
-  <!-- HERO -->
-  <section class="container hero">
-    <div>
-      <div class="eyebrow">Automated B2B Matchmaking • Partner Scouting • Outbound Ecosystem Building</div>
-      <h1 style="margin-top:12px">Accelerate Tech Matchmaking. <span>Scale Global Deal-Flow.</span></h1>
-      <p class="sub">Reply.io is the <strong>Matchmaking Engine</strong> that transforms manual partner discovery into automated, intelligent ecosystem building for R&D leaders, EIC grantees and Open Innovation Directors.</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <a href="https://get.reply.io/nkm89iofcgne" target="_blank" rel="noopener noreferrer" class="btn">Activate Your Matchmaking Engine →</a>
-        <a href="#discover" class="btn btn-ghost">See Discovery Workflow</a>
-      </div>
-      <div style="margin-top:18px;font-size:12.5px;color:var(--muted)">✓ 3x faster partner ID across EU ecosystems • Unified Email, LinkedIn & Strategic Touchpoints • Built for TTOs & Consortium Building</div>
-    </div>
-    <div class="card" style="background:var(--indigo);color:#fff;border-color:var(--indigo-2)">
-      <div style="font-size:11px;letter-spacing:.12em;color:#a5b4fc;font-weight:800">LIVE DISCOVERY SEQUENCE</div>
-      <div style="margin-top:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;font-size:13px">
-        <div>To: {{Innovation_Director}} @ {{Corporate_Scout}}</div>
-        <div style="color:#a5b4fc;margin:6px 0">Subject: Pilot opportunity - {{Project_Focus}} | TRL {{TRL_Level}}</div>
-        <div style="color:#cbd5e1">Hi {{FirstName}}, noticed {{Company}} scouting {{Challenge_Statement}} — we have EIC-funded tech at TRL6 that aligns with your innovation profile. Open to a 15-min matchmaking call?</div>
-      </div>
-      <div style="margin-top:12px;display:flex;gap:8px"><span class="pill" style="background:rgba(79,70,229,.3);color:#a5b4fc;border:1px solid rgba(79,70,229,.4)">Email →</span><span class="pill" style="background:rgba(79,70,229,.3);color:#a5b4fc;border:1px solid rgba(79,70,229,.4)">LinkedIn →</span><span class="pill" style="background:rgba(79,70,229,.3);color:#a5b4fc;border:1px solid rgba(79,70,229,.4)">Call booked</span></div>
-    </div>
-  </section>
-
-  <!-- PROBLEM VS SOLUTION -->
-  <section class="section section-alt">
+<!-- HERO SECTION -->
+<section class="hero">
     <div class="container">
-      <div class="head">
-        <div class="eyebrow">Problem vs Solution</div>
-        <h2>Manual EU Networking Doesn't Scale. Automated Matchmaking Does.</h2>
-      </div>
-      <div class="vs">
-        <div class="bad">
-          <h3 style="color:#991b1b">The Status Quo: Cross-Border Partner Gap</h3>
-          <ul style="margin-top:12px;color:#7f1d1d;font-size:14px;display:flex;flex-direction:column;gap:8px">
-            <li>• Weeks mapping networks, clusters, TTOs manually</li>
-            <li>• Generic outreach ignored by enterprise decision-makers</li>
-            <li>• No systematic scaling across 40+ countries</li>
-            <li>• Consortium building slows to email ping-pong</li>
-          </ul>
+        <div class="eyebrow">ARCHES 4-D FRAMEWORK • OUTREACH ENGINE</div>
+        <h1>Automate B2B Outreach & Partner Matchmaking for <span>Innovation Ecosystems</span></h1>
+        <p class="sub">Reply.io powers automated B2B prospecting, AI-driven email sequences, and multi-channel partner discovery for EU R&D consortia, university-corporate spinouts, and open innovation challenges.</p>
+        <div class="cta-group">
+            <a href="https://get.reply.io/nkm89iofcgne" target="_blank" rel="noopener sponsored" class="btn-primary">Start Outreach Free Trial →</a>
+            <span class="cta-note">14-day free trial • AI email assistant • No credit card required</span>
         </div>
-        <div class="good">
-          <h3 style="color:#166534">The Reply.io Matchmaking Engine</h3>
-          <ul style="margin-top:12px;color:#14532d;font-size:14px;display:flex;flex-direction:column;gap:8px">
-            <li>• Automated discovery of research nodes & corporate scouts</li>
-            <li>• AI-driven personalization based on TRL, project focus, challenge statements</li>
-            <li>• Multi-channel matchmaking: Email + LinkedIn + Soft Follow-ups</li>
-            <li>• Automated pipeline nurturing to partnership meetings</li>
-          </ul>
+    </div>
+</section>
+
+<!-- PROBLEM VS SOLUTION GRID -->
+<section class="comparison">
+    <div class="container">
+        <div class="grid-2">
+            <div class="card card-problem">
+                <div class="label">The Manual Outreach Friction</div>
+                <h3>Why Partner Discovery Slows Down Innovation</h3>
+                <ul>
+                    <li>✕ Manual LinkedIn and email prospecting that takes months to yield qualified R&D leads</li>
+                    <li>✕ Low response rates from generic, unpersonalized cold emails sent to potential partners</li>
+                    <li>✕ Disconnected communication channels causing missed follow-ups with key stakeholders</li>
+                    <li>✕ Poor domain deliverability and spam risks when scaling consortium communication</li>
+                </ul>
+            </div>
+            <div class="card card-solution">
+                <div class="label">The Reply AI Engine</div>
+                <h3>Automated Lead Discovery Built for Velocity</h3>
+                <ul>
+                    <li>✓ Multi-channel outreach across Email, LinkedIn, WhatsApp, and Cloud Calls</li>
+                    <li>✓ AI-generated hyper-personalized sequences tailored to research and industry profiles</li>
+                    <li>✓ Automated follow-up triggers based on partner intent, opens, and link clicks</li>
+                    <li>✓ Built-in email warmup and deliverability protection to ensure 98%+ inbox delivery</li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- 4-D DISCOVER PILLAR -->
-  <section id="discover" class="section container">
-    <div class="head">
-      <div class="eyebrow">The 4-D Discover Pillar</div>
-      <h2>How Automated Discovery Drives Pilot Opportunities</h2>
+<!-- 4-D PILLARS SECTION -->
+<section class="pillars">
+    <div class="container">
+        <h2>The Outreach & Matchmaking Architecture</h2>
+        <p class="sub-title">Reply.io operationalizes ecosystem matchmaking — transforming raw stakeholder lists into active, engaged pilot partners and consortium members.</p>
+        <div class="pillar-grid">
+            <div class="pillar">
+                <span class="icon">D1 • TARGET DISCOVERY</span>
+                <h4>AI Stakeholder Search & List Building</h4>
+                <p>Discover relevant enterprise partners, academic researchers, and high-growth startups with native contact search and real-time email verification.</p>
+            </div>
+            <div class="pillar">
+                <span class="icon">D2 • MULTI-CHANNEL SEQUENCES</span>
+                <h4>Automated Touchpoints & Follow-Ups</h4>
+                <p>Combine personalized email touchpoints, automated LinkedIn connection requests, and call steps into seamless, multi-touch engagement campaigns.</p>
+            </div>
+            <div class="pillar">
+                <span class="icon">D3 • AI RESPONSE HANDLING</span>
+                <h4>Smart Email Assistant & Sentiment Analysis</h4>
+                <p>Jason AI handles incoming partner inquiries, categorizes responses by interest level, and automatically schedules introductory meetings on your calendar.</p>
+            </div>
+            <div class="pillar">
+                <span class="icon">D4 • CRM & STACK INTEGRATION</span>
+                <h4>Two-Way Sync with Hubspot, Salesforce & ERPs</h4>
+                <p>Keep your entire team updated. Every outreach activity, reply, and booked meeting syncs instantly into your CRM and innovation portal.</p>
+            </div>
+        </div>
     </div>
-    <div class="grid grid-2">
-      <div class="card"><span class="pill">D1 • DETECT</span><h3>Automated Discovery & Network Engagement</h3><p style="color:var(--muted);font-size:14px;margin-top:6px">Identify international research nodes, corporate innovation heads and ecosystem contacts systematically. From weeks of manual search to daily automated stakeholder lists.</p></div>
-      <div class="card"><span class="pill">D2 • DEFINE</span><h3>AI-Driven Personalization at Scale</h3><p style="color:var(--muted);font-size:14px;margin-top:6px">Tailor outreach based on project focus, TRL level, and specific innovation challenge statements. No more generic cold emails that get ignored.</p></div>
-      <div class="card"><span class="pill">D3 • DEPLOY</span><h3>Multi-Channel Matchmaking Engine</h3><p style="color:var(--muted);font-size:14px;margin-top:6px">Combine automated email sequences, LinkedIn touchpoints, and strategic follow-ups to engage hard-to-reach tech scouters and corporate venturing teams.</p></div>
-      <div class="card"><span class="pill">D4 • DRIVE</span><h3>Automated Pipeline Nurturing</h3><p style="color:var(--muted);font-size:14px;margin-top:6px">Streamline initial interest handling, auto-book high-value introductory calls, and accelerate consortium building and pilot negotiations.</p></div>
-    </div>
+</section>
 
-    <div class="trust-bar" style="margin-top:40px">
-      <div><strong style="color:#fff">Enterprise Trust & Compliance</strong><br><span style="font-size:13px">Built for EU / International B2B standards</span></div>
-      <div style="display:flex;gap:18px;flex-wrap:wrap;font-size:13px;font-weight:700">
-        <span>✓ GDPR Compliant</span><span>✓ 99%+ Deliverability</span><span>✓ SOC 2 Type II</span><span>✓ ISO 27001</span><span>✓ EU Data Residency</span>
-      </div>
+<!-- ENTERPRISE TRUST GRID -->
+<section class="trust">
+    <div class="container">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <strong>🤖 AI Sequence Generator</strong>
+                <span>Creates tailored outreach messaging in seconds using Jason AI</span>
+            </div>
+            <div class="trust-item">
+                <strong>🛡️ Email Warmup Suite</strong>
+                <span>Protects sender reputation and maximizes inbox placement rates</span>
+            </div>
+            <div class="trust-item">
+                <strong>⚡ Native CRM Integrations</strong>
+                <span>Real-time two-way synchronization with HubSpot, Salesforce, & Pipedrive</span>
+            </div>
+            <div class="trust-item">
+                <strong>🇪🇺 GDPR Compliant Engine</strong>
+                <span>Fully compliant data handling and privacy features for EU outreach</span>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- CTA -->
-  <section class="container section">
-    <div class="cta">
-      <div class="eyebrow" style="color:#a5b4fc">Primary Call to Action</div>
-      <h2 style="margin-top:12px">Ready to Transform Partner Discovery from Months to Days?</h2>
-      <p style="color:#c7d2fe;margin:16px auto 28px;max-width:600px;font-size:16px">Initiate your Matchmaking Engine workflow. See how Open Innovation Directors scale strategic stakeholder engagement without adding headcount.</p>
-      <a href="https://get.reply.io/nkm89iofcgne" target="_blank" rel="noopener noreferrer" class="btn" style="background:#fff;color:var(--indigo)">Start Free Trial - See Discovery Workflow →</a>
-      <div style="margin-top:16px;font-size:12px;color:#a5b4fc">No credit card • GDPR-safe onboarding • For Open Innovation, TTOs & B2B Growth Leads</div>
+<!-- FINAL CTA SECTION -->
+<section class="final-cta">
+    <div class="container">
+        <h2>Scale Your Ecosystem Outreach with AI Precision.</h2>
+        <p>Join ecosystem directors and innovation hubs using Reply.io to automate partner discovery, accelerate consortium building, and fill open calls effortlessly.</p>
+        <a href="https://get.reply.io/nkm89iofcgne" target="_blank" rel="noopener sponsored" class="btn-primary">Launch Your Outreach Campaign →</a>
+        <p style="margin-top: 16px; font-size: 13px;">14-day trial • Quick set up • Dedicated support</p>
     </div>
-  </section>
-</main>
+</section>
 
 <footer>
-  <div class="container" style="display:flex;flex-direction:column;gap:12px">
-    <p><strong>Affiliate Disclosure & Framework Notice (FTC Compliant):</strong> This independent promotional bridge page promotes Reply.io under the ARCHES 4-D Innovation Framework (Phase 01: Discover). We may receive an affiliate commission if you sign up via <a href="https://get.reply.io/nkm89iofcgne" target="_blank" rel="noopener noreferrer" style="color:var(--muted);text-decoration:underline">https://get.reply.io/nkm89iofcgne</a>. Reply.io is an automated outreach platform. Managed by ARCHES. © 2026 ARCHES Bridge Page. This site is not affiliated with GitHub.</p>
-    <p style="margin-top:8px">
-      <a href="docs/privacy.html" style="color:var(--muted);text-decoration:underline">Privacy</a> • 
-      <a href="docs/terms.html" style="color:var(--muted);text-decoration:underline">Terms</a> • 
-      <a href="https://get.reply.io/nkm89iofcgne" target="_blank" rel="noopener noreferrer" style="color:var(--muted);text-decoration:underline">reply.io</a>
-    </p>
-  </div>
+    <div class="container">
+        <div class="footer-links">
+            <a href="docs/privacy.html">Privacy Policy</a>
+            <a href="docs/terms.html">Terms of Service</a>
+            <a href="https://get.reply.io/nkm89iofcgne" target="_blank" rel="noopener sponsored" style="color: var(--gray); text-decoration: underline;">reply.io</a>
+        </div>
+        <div class="disclosure">
+            <strong>FTC Affiliate Disclosure & ARCHES Compliance Notice:</strong> This bridge page is an independent asset created by the ARCHES Innovation Ecosystem Management for educational purposes under the ARCHES 4-D Framework. This site contains affiliate links, including <a href="https://get.reply.io/nkm89iofcgne" target="_blank" rel="noopener sponsored">this Reply.io link</a>. If you click and sign up, we may receive a commission at no additional cost to you. Reply® is a registered trademark of Reply Inc. and is not directly affiliated with ARCHES.
+        </div>
+        <p style="margin-top: 16px;">© 2026 ARCHES Innovation Ecosystem. All rights reserved. | Outreach & Matchmaking Infrastructure.</p>
+    </div>
 </footer>
+
+</body>
+</html>
