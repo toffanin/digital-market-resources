@@ -3,173 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melio | ARCHES 4-D DEPLOY Phase - B2B Payment Infrastructure for Innovation Ecosystems</title>
-    <meta name="description" content="Deploy and automate B2B payments for open innovation. Melio powers vendor payouts, pilot fund disbursements, and cross-border financial workflows for EU R&D ecosystems.">
+    <title>Melio Payments | ARCHES 4-D Framework - B2B Financial & Payment Workflows</title>
+    <meta name="description" content="Streamline B2B vendor payments, contractor payouts, and financial workflows for innovation hubs and R&D operations with Melio.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #0066FF; --dark: #0A0F1F; --gray: #5A6478; --light: #F4F7FC; --accent: #00D1A0; }
+        :root { --primary: #00A664; --dark: #0A0F1F; --gray: #5A6478; --light: #F4F7FC; --accent: #00D1A0; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; color: var(--dark); line-height: 1.6; background: #fff; -webkit-font-smoothing: antialiased; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        /* HERO SECTION */
-        .hero { background: radial-gradient(120% 120% at 0% 0%, #DCE8FF 0%, #FFFFFF 65%), var(--light); padding: 100px 0 80px; border-bottom: 1px solid #E2E8F0; }
+        .hero { background: radial-gradient(120% 120% at 0% 0%, #E6F7F0 0%, #FFFFFF 65%), var(--light); padding: 100px 0 80px; border-bottom: 1px solid #E2E8F0; }
         .eyebrow { display: inline-block; background: var(--dark); color: #fff; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px; font-weight: 600; }
         .hero h1 { font-size: 52px; line-height: 1.05; letter-spacing: -1.5px; font-weight: 800; max-width: 820px; margin-bottom: 20px; }
         .hero h1 span { color: var(--primary); }
         .hero .sub { font-size: 20px; color: var(--gray); max-width: 700px; margin-bottom: 32px; }
         .cta-group { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
-        .btn-primary { background: var(--primary); color: #fff; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; transition: all .2s; box-shadow: 0 8px 24px rgba(0,102,255,0.25); }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,102,255,0.35); background: #0052CC; }
+        .btn-primary { background: var(--primary); color: #fff; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; transition: all .2s; box-shadow: 0 8px 24px rgba(0,166,100,0.25); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,166,100,0.35); background: #008F56; }
         .cta-note { font-size: 13px; color: var(--gray); }
-        /* PROBLEM VS SOLUTION GRID */
         .comparison { padding: 90px 0; }
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
         .card-problem, .card-solution { border-radius: 16px; padding: 36px; }
         .card-problem { background: #FFF5F5; border: 1px solid #FFD6D6; }
-        .card-solution { background: #EFF5FF; border: 1px solid #B8D4FF; }
+        .card-solution { background: #EAF8F2; border: 1px solid #BAECD6; }
         .label { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
         .card-problem .label { color: #C53030; }
         .card-solution .label { color: var(--primary); }
         .card h3 { font-size: 24px; margin-bottom: 16px; letter-spacing: -0.5px; }
         .card ul { list-style: none; }
         .card li { padding: 8px 0; display: flex; gap: 10px; font-size: 16px; color: #2D3748; }
-        /* 4-D PILLARS SECTION */
-        .pillars { background: var(--dark); background-color: #0A0F1F; color: #fff; padding: 100px 0; }
+        .pillars { background: var(--dark); color: #fff; padding: 100px 0; }
         .pillars h2 { font-size: 40px; text-align: center; letter-spacing: -1px; margin-bottom: 12px; }
         .pillars .sub-title { text-align: center; color: #A0AEC0; max-width: 720px; margin: 0 auto 60px; font-size: 18px; }
         .pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
         .pillar { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 28px; transition: all .2s; }
-        .pillar:hover { background: rgba(255,255,255,0.08); border-color: rgba(0,102,255,0.4); }
+        .pillar:hover { background: rgba(255,255,255,0.08); border-color: rgba(0,166,100,0.4); }
         .pillar .icon { font-size: 11px; font-weight: 800; letter-spacing: 1px; color: var(--accent); margin-bottom: 16px; display: block; }
         .pillar h4 { font-size: 18px; margin-bottom: 12px; line-height: 1.3; color: #fff; }
         .pillar p { font-size: 14px; color: #A0AEC0; line-height: 1.6; }
-        /* ENTERPRISE TRUST GRID */
         .trust { padding: 80px 0; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0; }
         .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center; }
         .trust-item strong { display: block; font-size: 16px; margin-bottom: 6px; color: var(--dark); }
         .trust-item span { font-size: 14px; color: var(--gray); }
-        /* FINAL CTA SECTION */
         .final-cta { padding: 100px 0; text-align: center; background: var(--light); }
         .final-cta h2 { font-size: 44px; letter-spacing: -1.2px; line-height: 1.1; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
         .final-cta p { font-size: 18px; color: var(--gray); max-width: 620px; margin: 0 auto 36px; }
-        /* FOOTER */
+        .advisory-banner { background: var(--light); border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0; padding: 48px 0; text-align: center; }
+        .advisory-banner h4 { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; color: var(--dark); }
+        .advisory-banner p { font-size: 15px; color: var(--gray); max-width: 620px; margin: 0 auto 20px; line-height: 1.5; }
+        .btn-advisory { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #ffffff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.2s ease; }
+        .btn-advisory:hover { background: var(--primary); transform: translateY(-1px); }
         footer { padding: 40px 0; font-size: 13px; color: var(--gray); background: #fff; }
         .footer-links { display: flex; gap: 20px; margin-bottom: 16px; flex-wrap: wrap; }
         .footer-links a { color: var(--gray); text-decoration: none; }
         .footer-links a:hover { text-decoration: underline; color: var(--dark); }
         .disclosure { background: #F7F8FA; border: 1px solid #E9ECF5; border-radius: 8px; padding: 16px; margin-top: 20px; font-size: 12px; line-height: 1.6; }
-        @media(max-width: 900px) {
-            .grid-2, .pillar-grid, .trust-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 38px; }
-            .final-cta h2 { font-size: 32px; }
-        }
+        @media(max-width: 900px) { .grid-2, .pillar-grid, .trust-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 38px; } .final-cta h2 { font-size: 32px; } }
     </style>
 </head>
 <body>
 
-<!-- HERO SECTION -->
 <section class="hero">
     <div class="container">
-        <div class="eyebrow">ARCHES 4-D FRAMEWORK • DEPLOY PHASE</div>
-        <h1>Deploy & Automate B2B Payments for <span>Innovation Ecosystems</span></h1>
-        <p class="sub">Melio is the DEPLOY Infrastructure for ARCHES. Streamline vendor payouts, pilot fund execution, and cross-border financial workflows for EU R&D ecosystems, open innovation challenges, and university-corporate pilots — without wire chaos or accounting overhead.</p>
+        <div class="eyebrow">ARCHES 4-D FRAMEWORK • GTI DEPLOY PHASE</div>
+        <h1>Streamline B2B Payments & <span>Vendor Financial Workflows</span></h1>
+        <p class="sub">Melio simplifies accounts payable and receivable for innovation hubs, contractors, and spinout operations with flexible payment options and seamless accounting sync.</p>
         <div class="cta-group">
-            <a href="https://affiliates.meliopayments.com/9ixrxlsddn5z" target="_blank" rel="noopener sponsored" class="btn-primary">Deploy My Payment Engine →</a>
-            <span class="cta-note">Free to set up • Pay vendors via ACH or card • No monthly fees</span>
+            <a href="https://affiliates.meliopayments.com/9ixrxlsddn5z" target="_blank" rel="noopener sponsored" class="btn-primary">Get Started Free with Melio →</a>
+            <span class="cta-note">No monthly subscription fees • Pay via ACH, card, or check</span>
         </div>
     </div>
 </section>
 
-<!-- PROBLEM VS SOLUTION GRID -->
 <section class="comparison">
     <div class="container">
         <div class="grid-2">
             <div class="card card-problem">
-                <div class="label">The Manual Disbursement Trap</div>
-                <h3>Why Innovation Payments Stall Pilots</h3>
+                <div class="label">Legacy Financial Friction</div>
+                <h3>Why Operational Payables Slow Down Execution</h3>
                 <ul>
-                    <li>✕ Slow, error-prone wire transfers that delay startup and researcher payouts for weeks</li>
-                    <li>✕ Hidden FX fees and cross-border charges eating into pilot and challenge budgets</li>
-                    <li>✕ Manual invoice tracking across spreadsheets, inboxes, and disconnected tools</li>
-                    <li>✕ Poor audit trails and approval gaps that create compliance risk for EU coordinators</li>
+                    <li>✕ Time-consuming paper check processing and manual bank transfers</li>
+                    <li>✕ Strict payment method requirements from vendors causing cash flow bottlenecks</li>
+                    <li>✕ Manual data entry leading to accounting reconciliation errors</li>
+                    <li>✕ Lack of multi-user approval workflows for organizational spending oversight</li>
                 </ul>
             </div>
             <div class="card card-solution">
-                <div class="label">The Melio Payment Engine</div>
-                <h3>Automated Payouts Built for Innovation Velocity</h3>
+                <div class="label">The Melio Payments Engine</div>
+                <h3>Digital Accounts Payable Built for Flexibility</h3>
                 <ul>
-                    <li>✓ Automated ACH & card payouts — pay vendors, startups & contractors even if they prefer ACH</li>
-                    <li>✓ Scheduled vendor disbursements for recurring pilots, grants, and challenge awards</li>
-                    <li>✓ Full accounting sync with QuickBooks, Xero & leading ERPs for real-time reconciliation</li>
-                    <li>✓ Zero-fee ACH options and low-fee card payments to preserve your innovation budget</li>
+                    <li>✓ Pay vendors via credit card (even if they only accept bank transfers)</li>
+                    <li>✓ Automatic synchronization with QuickBooks Online, Xero, and FreshBooks</li>
+                    <li>✓ Custom approval workflows to ensure managerial oversight before payment release</li>
+                    <li>✓ Scheduled automated payments to optimize operational cash flow timing</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 4-D PILLARS SECTION -->
 <section class="pillars">
     <div class="container">
-        <h2>The 4-D DEPLOY Architecture</h2>
-        <p class="sub-title">Melio operationalizes the DEPLOY phase of ARCHES — converting manual disbursement workflows into secure, automated, and audit-ready financial infrastructure.</p>
+        <h2>The B2B Deployment Architecture</h2>
+        <p class="sub-title">Melio powers the operational financial layer of the GTI framework — ensuring seamless liquidity and vendor management.</p>
         <div class="pillar-grid">
-            <div class="pillar">
-                <span class="icon">D1 • DEPLOYMENT INFRASTRUCTURE</span>
-                <h4>B2B Accounts Payable & Vendor Payout Engine</h4>
-                <p>Centralize all innovation ecosystem payments. Onboard research partners, startups, and service providers once, then manage all challenge disbursements and open innovation invoices from a single dashboard.</p>
-            </div>
-            <div class="pillar">
-                <span class="icon">D2 • AUTOMATED PAYOUT WORKFLOWS</span>
-                <h4>Scheduled Disbursements for Pilots & Contractors</h4>
-                <p>Automate pilot fund execution and contractor payments. Set approval workflows, schedule recurring disbursements, and trigger payouts upon milestone completion — no more chasing invoices for EU R&D projects.</p>
-            </div>
-            <div class="pillar">
-                <span class="icon">D3 • FINANCIAL COMPLIANCE & AUDIT</span>
-                <h4>Bank-Grade Security, Approvals & Transaction Logs</h4>
-                <p>Built for enterprise accountability. Custom approval flows, role-based permissions, and complete transaction history ensure every euro of your innovation budget is traceable and compliant for coordinators and finance teams.</p>
-            </div>
-            <div class="pillar">
-                <span class="icon">D4 • ACCOUNTING INTEGRATION</span>
-                <h4>Seamless Sync with QuickBooks, Xero & ERPs</h4>
-                <p>Eliminate double-entry. Every bill, receipt, and payout syncs automatically with your accounting stack, giving innovation directors real-time budget visibility across all open challenges and pilot programs.</p>
-            </div>
+            <div class="pillar"><span class="icon">D1 • INVOICE INGESTION</span><h4>Digital AP Automation</h4><p>Upload invoices via photo, PDF forwarding, or automatic accounting software sync.</p></div>
+            <div class="pillar"><span class="icon">D2 • PAYMENT FLEXIBILITY</span><h4>Card & Bank Payouts</h4><p>Pay with credit card to defer cash outlays while vendors receive ACH or paper check.</p></div>
+            <div class="pillar"><span class="icon">D3 • APPROVAL CONTROLS</span><h4>Multi-Level Approvals</h4><p>Set spend thresholds and authorization chains for internal governance.</p></div>
+            <div class="pillar"><span class="icon">D4 • TWO-WAY RECONCILIATION</span><h4>Accounting Sync</h4><p>Eliminate double entry with real-time balance reconciliation in your GL stack.</p></div>
         </div>
     </div>
 </section>
 
-<!-- ENTERPRISE TRUST GRID -->
 <section class="trust">
     <div class="container">
         <div class="trust-grid">
-            <div class="trust-item">
-                <strong>🔒 Bank-Grade Security</strong>
-                <span>256-bit encryption & SOC 2 compliance for innovation finance</span>
-            </div>
-            <div class="trust-item">
-                <strong>🏦 FDIC-Insured Partners</strong>
-                <span>Funds held with trusted, regulated financial institution partners</span>
-            </div>
-            <div class="trust-item">
-                <strong>🔄 Automated ERP Sync</strong>
-                <span>Two-way sync with QuickBooks, Xero & NetSuite in real-time</span>
-            </div>
-            <div class="trust-item">
-                <strong>🌐 Low-Fee Cross-Border Payouts</strong>
-                <span>Preserve budget with zero-fee ACH and optimized payout rails</span>
-            </div>
+            <div class="trust-item"><strong>💳 Payment Choice</strong><span>Pay via credit card or ACH bank transfer on your terms</span></div>
+            <div class="trust-item"><strong>⚡ Fast Delivery</strong><span>Same-day and instant transfer options available for urgent payouts</span></div>
+            <div class="trust-item"><strong>🔒 Bank-Grade Security</strong><span>128-bit SSL encryption and strict data protection protocols</span></div>
+            <div class="trust-item"><strong>📊 QuickBooks & Xero</strong><span>Seamless two-way integration with leading accounting software</span></div>
         </div>
     </div>
 </section>
 
-<!-- FINAL CTA SECTION -->
 <section class="final-cta">
     <div class="container">
-        <h2>Move From Invoice Chaos to Automated Disbursement.</h2>
-        <p>Join innovation hubs and R&D coordinators using Melio to accelerate pilot fund execution, simplify vendor compliance, and close financial reporting in hours — not weeks.</p>
-        <a href="https://affiliates.meliopayments.com/9ixrxlsddn5z" target="_blank" rel="noopener sponsored" class="btn-primary">Start Automating Innovation Payments →</a>
-        <p style="margin-top: 16px; font-size: 13px;">No subscription required • Set up in minutes • Trusted by 100,000+ businesses</p>
+        <h2>Optimize Your B2B Vendor Payments Today.</h2>
+        <p>Join thousands of modern businesses and project leaders using Melio to simplify payables, protect cash flow, and eliminate financial friction.</p>
+        <a href="https://affiliates.meliopayments.com/9ixrxlsddn5z" target="_blank" rel="noopener sponsored" class="btn-primary">Create Your Free Melio Account →</a>
+        <p style="margin-top: 16px; font-size: 13px;">No monthly fee • Free ACH transfers • Instant sign-up</p>
+    </div>
+</section>
+
+<section class="advisory-banner">
+    <div class="container">
+        <h4>Building an EU R&D Consortium or Open Innovation Call?</h4>
+        <p>Our team assists innovation hubs, university spinouts, and project coordinators in configuring custom outreach and digital campaign infrastructure under the ARCHES 4-D Framework.</p>
+        <a href="mailto:partnerships@arches-centroricerca.org?subject=ARCHES%20Ecosystem%20Infrastructure%20Inquiry" class="btn-advisory">
+            ✉️ Contact Advisory Team: partnerships@arches-centroricerca.org
+        </a>
     </div>
 </section>
 
@@ -181,9 +153,9 @@
             <a href="https://affiliates.meliopayments.com/9ixrxlsddn5z" target="_blank" rel="noopener sponsored" style="color: var(--gray); text-decoration: underline;">meliopayments.com</a>
         </div>
         <div class="disclosure">
-            <strong>FTC Affiliate Disclosure & ARCHES Compliance Notice:</strong> This bridge page is an independent asset created by the ARCHES Innovation Ecosystem Management for educational purposes under the ARCHES 4-D Framework (DEPLOY Phase). This site contains affiliate links, including <a href="https://affiliates.meliopayments.com/9ixrxlsddn5z" target="_blank" rel="noopener sponsored">this Melio link</a>. If you click and create an account or complete a transaction, we may receive a commission at no additional cost to you. Melio® is a registered trademark of Melio Inc. and is not affiliated with ARCHES. All financial workflows described are illustrative; please review Melio's official terms for fee schedules, eligibility, and compliance. This page does not provide financial advice.
+            <strong>FTC Affiliate Disclosure & ARCHES Compliance Notice:</strong> This bridge page is an independent asset created by the ARCHES Innovation Ecosystem Management for educational purposes under the ARCHES 4-D Framework. This site contains affiliate links, including <a href="https://affiliates.meliopayments.com/9ixrxlsddn5z" target="_blank" rel="noopener sponsored">this Melio link</a>. If you click and sign up, we may receive a commission at no extra cost to you. Melio® is a registered trademark of Melio Payments Inc.
         </div>
-        <p style="margin-top: 16px;">© 2026 ARCHES Innovation Ecosystem. All rights reserved. | DEPLOY Phase Financial Infrastructure.</p>
+        <p style="margin-top: 16px;">© 2026 ARCHES Innovation Ecosystem. All rights reserved. | B2B Operations & Financial Infrastructure.</p>
     </div>
 </footer>
 
