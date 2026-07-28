@@ -3,194 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moosend | ARCHES 4-D DEVELOP Phase - Lead Capture & Innovation Funnel Automation Engine</title>
-    <meta name="description" content="Engineer high-converting innovation challenge funnels. Automate lead capture, segmentation, and trigger-based workflows for open innovation ecosystems with Moosend.">
+    <title>Moosend | ARCHES 4-D Framework - Consortium Nurturing & Email Automation</title>
+    <meta name="description" content="Nurture R&D ecosystem partners, automate project updates, and manage newsletter campaigns with Moosend's European-compliant marketing platform.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #8800EC; --primary-alt: #1E62EC; --dark: #0A0F1F; --gray: #5A6478; --light: #F5F7FF; --accent: #00D1A0; }
+        :root { --primary: #FF5A5F; --dark: #0A0F1F; --gray: #5A6478; --light: #F4F7FC; --accent: #00D1A0; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; color: var(--dark); line-height: 1.6; background: #fff; -webkit-font-smoothing: antialiased; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        
-        /* HERO SECTION */
-        .hero { background: radial-gradient(120% 120% at 0% 0%, #EDE5FF 0%, #FFFFFF 65%), var(--light); padding: 100px 0 80px; border-bottom: 1px solid #E9ECF5; }
+        .hero { background: radial-gradient(120% 120% at 0% 0%, #FFF0F0 0%, #FFFFFF 65%), var(--light); padding: 100px 0 80px; border-bottom: 1px solid #E2E8F0; }
         .eyebrow { display: inline-block; background: var(--dark); color: #fff; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px; font-weight: 600; }
-        .hero h1 { font-size: 52px; line-height: 1.05; letter-spacing: -1.5px; font-weight: 800; max-width: 850px; margin-bottom: 20px; }
+        .hero h1 { font-size: 52px; line-height: 1.05; letter-spacing: -1.5px; font-weight: 800; max-width: 820px; margin-bottom: 20px; }
         .hero h1 span { color: var(--primary); }
         .hero .sub { font-size: 20px; color: var(--gray); max-width: 700px; margin-bottom: 32px; }
         .cta-group { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
-        .btn-primary { background: var(--primary); color: #fff; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; transition: all .2s; box-shadow: 0 8px 24px rgba(136,0,236,0.25); }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(136,0,236,0.35); background: #7600CC; }
+        .btn-primary { background: var(--primary); color: #fff; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; transition: all .2s; box-shadow: 0 8px 24px rgba(255,90,95,0.25); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255,90,95,0.35); background: #E0484D; }
         .cta-note { font-size: 13px; color: var(--gray); }
-        
-        /* PROBLEM VS SOLUTION GRID */
         .comparison { padding: 90px 0; }
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
         .card-problem, .card-solution { border-radius: 16px; padding: 36px; }
         .card-problem { background: #FFF5F5; border: 1px solid #FFD6D6; }
-        .card-solution { background: #F5F0FF; border: 1px solid #D8C4FF; }
+        .card-solution { background: #FFF2F2; border: 1px solid #FFD2D3; }
         .label { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
         .card-problem .label { color: #C53030; }
         .card-solution .label { color: var(--primary); }
         .card h3 { font-size: 24px; margin-bottom: 16px; letter-spacing: -0.5px; }
         .card ul { list-style: none; }
         .card li { padding: 8px 0; display: flex; gap: 10px; font-size: 16px; color: #2D3748; }
-        
-        /* 4-D PILLARS SECTION */
-        .pillars { background: var(--dark); background-color: #0A0F1F; color: #fff; padding: 100px 0; }
+        .pillars { background: var(--dark); color: #fff; padding: 100px 0; }
         .pillars h2 { font-size: 40px; text-align: center; letter-spacing: -1px; margin-bottom: 12px; }
         .pillars .sub-title { text-align: center; color: #A0AEC0; max-width: 720px; margin: 0 auto 60px; font-size: 18px; }
         .pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
         .pillar { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 28px; transition: all .2s; }
-        .pillar:hover { background: rgba(255,255,255,0.08); border-color: rgba(136,0,236,0.4); }
+        .pillar:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,90,95,0.4); }
         .pillar .icon { font-size: 11px; font-weight: 800; letter-spacing: 1px; color: var(--accent); margin-bottom: 16px; display: block; }
         .pillar h4 { font-size: 18px; margin-bottom: 12px; line-height: 1.3; color: #fff; }
         .pillar p { font-size: 14px; color: #A0AEC0; line-height: 1.6; }
-        
-        /* ENTERPRISE TRUST GRID */
-        .trust { padding: 80px 0; border-top: 1px solid #E9ECF5; border-bottom: 1px solid #E9ECF5; }
+        .trust { padding: 80px 0; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0; }
         .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center; }
         .trust-item strong { display: block; font-size: 16px; margin-bottom: 6px; color: var(--dark); }
         .trust-item span { font-size: 14px; color: var(--gray); }
-        
-        /* FINAL CTA SECTION */
         .final-cta { padding: 100px 0; text-align: center; background: var(--light); }
         .final-cta h2 { font-size: 44px; letter-spacing: -1.2px; line-height: 1.1; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
         .final-cta p { font-size: 18px; color: var(--gray); max-width: 620px; margin: 0 auto 36px; }
-        
-        /* FOOTER */
+        .advisory-banner { background: var(--light); border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0; padding: 48px 0; text-align: center; }
+        .advisory-banner h4 { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; color: var(--dark); }
+        .advisory-banner p { font-size: 15px; color: var(--gray); max-width: 620px; margin: 0 auto 20px; line-height: 1.5; }
+        .btn-advisory { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #ffffff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.2s ease; }
+        .btn-advisory:hover { background: var(--primary); transform: translateY(-1px); }
         footer { padding: 40px 0; font-size: 13px; color: var(--gray); background: #fff; }
         .footer-links { display: flex; gap: 20px; margin-bottom: 16px; flex-wrap: wrap; }
         .footer-links a { color: var(--gray); text-decoration: none; }
         .footer-links a:hover { text-decoration: underline; color: var(--dark); }
         .disclosure { background: #F7F8FA; border: 1px solid #E9ECF5; border-radius: 8px; padding: 16px; margin-top: 20px; font-size: 12px; line-height: 1.6; }
-        .disclosure a { color: var(--primary); text-decoration: underline; }
-        
-        @media(max-width: 900px) {
-            .grid-2, .pillar-grid, .trust-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 38px; }
-            .final-cta h2 { font-size: 32px; }
-        }
+        @media(max-width: 900px) { .grid-2, .pillar-grid, .trust-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 38px; } .final-cta h2 { font-size: 32px; } }
     </style>
 </head>
 <body>
 
-<!-- HERO SECTION -->
 <section class="hero">
     <div class="container">
-        <div class="eyebrow">ARCHES 4-D FRAMEWORK • DEVELOP PHASE</div>
-        <h1>Engineer Innovation Funnels That <span>Capture, Segment & Convert</span> Leads Automatically</h1>
-        <p class="sub">Moosend is the DEVELOP Engine for the ARCHES Framework. Transform fragmented outreach into automated lead capture workflows, TRL-based segmentation, and trigger-driven nurture sequences for pilots, open innovation challenges, and technology showcases.</p>
+        <div class="eyebrow">ARCHES 4-D FRAMEWORK • GTI DEVELOP PHASE</div>
+        <h1>Automate Stakeholder Nurturing & <span>Consortium Communications</span></h1>
+        <p class="sub">Moosend delivers cost-effective email automation, audience segmentation, and broadcast publishing designed to keep R&D consortia, advisory boards, and subscribers engaged.</p>
         <div class="cta-group">
-            <a href="https://trymoo.moosend.com/uh78zyi9rz15" class="btn-primary" target="_blank" rel="noopener noreferrer">Activate My Innovation Funnel Engine →</a>
-            <span class="cta-note">Start free • Includes automation & GDPR tools</span>
+            <a href="[INSERT_MOOSEND_AFFILIATE_LINK]" target="_blank" rel="noopener sponsored" class="btn-primary">Start Moosend Free Trial →</a>
+            <span class="cta-note">30-day free trial • Drag-and-drop editor • Native EU hosting</span>
         </div>
     </div>
 </section>
 
-<!-- PROBLEM VS SOLUTION GRID -->
 <section class="comparison">
     <div class="container">
         <div class="grid-2">
             <div class="card card-problem">
-                <div class="label">The Manual Outreach Trap</div>
-                <h3>Why Innovation Funnels Leak 80% of Partners</h3>
+                <div class="label">Manual Ecosystem Communications</div>
+                <h3>The Challenge of Disconnected Stakeholder Nurturing</h3>
                 <ul>
-                    <li>✕ Disconnected signup forms that lose TRL, domain, and stakeholder data</li>
-                    <li>✕ Manual email follow-ups that fail to nurture EIC grantees & scouts at scale</li>
-                    <li>✕ No segmentation — sending the same pilot call to founders, TTOs & corporates</li>
-                    <li>✕ Zero visibility into open rates, deliverability, and challenge funnel drop-off</li>
+                    <li>✕ Expensive tier pricing on legacy tools inflating public project budgets</li>
+                    <li>✕ Irrelevant, unsegmented broadcasts leading to unsubscriptions from key partners</li>
+                    <li>✕ Absence of automated welcome sequences for newly onboarded participants</li>
+                    <li>✕ Strict EU GDPR compliance concerns when storing personal emails on non-EU servers</li>
                 </ul>
             </div>
             <div class="card card-solution">
-                <div class="label">The Moosend Automation Engine</div>
-                <h3>Automated Intake to Qualified Pilot Pipeline</h3>
+                <div class="label">The Moosend Nurture Engine</div>
+                <h3>Automated, High-Deliverability Consortium Nurturing</h3>
                 <ul>
-                    <li>✓ High-converting embedded forms capturing TRL, IP & partner requirements</li>
-                    <li>✓ Trigger-based workflows that auto-nurture leads by challenge interest & stage</li>
-                    <li>✓ Dynamic segmentation by TRL, domain, stakeholder type & engagement score</li>
-                    <li>✓ 98%+ deliverability with real-time analytics on opens, CTR & funnel velocity</li>
+                    <li>✓ Intuitive visual workflow builder for multi-step automated email journeys</li>
+                    <li>✓ Advanced audience segmentation by research tier, geographic region, and partner status</li>
+                    <li>✓ High inbox deliverability with automated list cleaning and domain verification</li>
+                    <li>✓ European data center hosting ensuring full GDPR compliance natively</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 4-D PILLARS SECTION -->
 <section class="pillars">
     <div class="container">
-        <h2>The 4-D DEVELOP Architecture</h2>
-        <p class="sub-title">Moosend operationalizes the DEVELOP phase of ARCHES — converting portal traffic into segmented, qualified, and automation-ready innovation pipelines.</p>
+        <h2>The Ecosystem Nurture Architecture</h2>
+        <p class="sub-title">Moosend builds lasting relationships with consortium partners through automated content sequences.</p>
         <div class="pillar-grid">
-            <div class="pillar">
-                <span class="icon">D1 • FUNNEL ARCHITECTURE</span>
-                <h4>Lead Capture & Signup Form Integration</h4>
-                <p>Deploy embeddable, no-code forms directly into your Unbounce & Instapage challenge portals. Capture structured innovation data — TRL, domain, funding stage, IP status — with double opt-in and GDPR consent built-in.</p>
-            </div>
-            <div class="pillar">
-                <span class="icon">D2 • AUTOMATED WORKFLOWS</span>
-                <h4>Trigger-Based Email Sequences for Innovation Challenges</h4>
-                <p>Design visual automation journeys that trigger on form submit, link click, or TRL tag. Auto-nurture deep-tech founders with pilot prep sequences and corporate scouters with curated showcase digests.</p>
-            </div>
-            <div class="pillar">
-                <span class="icon">D3 • DYNAMIC SEGMENTATION</span>
-                <h4>Tagging by TRL, Domain & Stakeholder Type</h4>
-                <p>Go beyond lists. Moosend's dynamic segmentation auto-tags every lead by Technology Readiness Level, vertical (AI, GreenTech, Bio), and persona (TTO, EIC Grantee, Open Innovation Director) for hyper-personalized outreach.</p>
-            </div>
-            <div class="pillar">
-                <span class="icon">D4 • ANALYTICS & DELIVERABILITY</span>
-                <h4>Open Rates, CTR & GDPR-Compliant Sender Score</h4>
-                <p>Monitor funnel health in real-time. Enterprise-grade deliverability infrastructure, spam-score testing, heatmaps, and GDPR audit trails ensure your innovation calls land in the inbox, not spam.</p>
-            </div>
+            <div class="pillar"><span class="icon">D1 • AUDIENCE SEGMENTATION</span><h4>Dynamic List Grouping</h4><p>Organize contacts automatically based on project interest, stakeholder tier, and interaction history.</p></div>
+            <div class="pillar"><span class="icon">D2 • AUTOMATED JOURNEYS</span><h4>Visual Drip Workflows</h4><p>Deploy onboarding triggers, event follow-ups, and progress update newsletters automatically.</p></div>
+            <div class="pillar"><span class="icon">D3 • NEWSLETTER DESIGN</span><h4>Drag & Drop Editor</h4><p>Create clean, responsive project digests and policy briefings with zero coding experience.</p></div>
+            <div class="pillar"><span class="icon">D4 • PERFORMANCE TRACKING</span><h4>Real-Time Analytics</h4><p>Monitor open rates, link clicks, and subscriber activity across all ecosystem updates.</p></div>
         </div>
     </div>
 </section>
 
-<!-- ENTERPRISE TRUST GRID -->
 <section class="trust">
     <div class="container">
         <div class="trust-grid">
-            <div class="trust-item">
-                <strong>🛡️ GDPR & ISO 27001 Certified</strong>
-                <span>Full EU data residency & consent management for Horizon Europe</span>
-            </div>
-            <div class="trust-item">
-                <strong>⚡ Real-Time Webhooks</strong>
-                <span>Instantly sync challenge leads to Airtable, HubSpot & Notion</span>
-            </div>
-            <div class="trust-item">
-                <strong>🔗 Full CRM Sync</strong>
-                <span>Native integration with Salesforce, Pipedrive & innovation CRMs</span>
-            </div>
-            <div class="trust-item">
-                <strong>📬 High Deliverability Engine</strong>
-                <span>98%+ inbox placement with dedicated sender reputation tools</span>
-            </div>
+            <div class="trust-item"><strong>🇪🇺 Native GDPR Compliance</strong><span>European hosting infrastructure ensuring full legal compliance</span></div>
+            <div class="trust-item"><strong>💰 Cost-Effective Scaling</strong><span>Predictable subscription pricing ideal for grant-funded projects</span></div>
+            <div class="trust-item"><strong>📈 98%+ Deliverability</strong><span>Top-tier inbox placement rates for critical ecosystem updates</span></div>
+            <div class="trust-item"><strong>🔌 Easy API & Webhooks</strong><span>Connects seamlessly with web forms, landing pages, and CRMs</span></div>
         </div>
     </div>
 </section>
 
-<!-- FINAL CTA SECTION -->
 <section class="final-cta">
     <div class="container">
-        <h2>Stop Managing Lists. Start Engineering Pipelines.</h2>
-        <p>Join EU innovation hubs using Moosend to turn static challenge traffic into automated, segmented pilot pipelines — with 40% higher qualification rates.</p>
-        <a href="https://trymoo.moosend.com/uh78zyi9rz15" class="btn-primary" target="_blank" rel="noopener noreferrer">Build My Automated Innovation Funnel Now</a>
-        <p style="margin-top: 16px; font-size: 13px;">Free 30-day trial • No credit card required • Cancel anytime</p>
+        <h2>Streamline Your Consortium Email Automation.</h2>
+        <p>Keep your R&D network, university partners, and innovation community informed and engaged effortlessly with Moosend.</p>
+        <a href="[INSERT_MOOSEND_AFFILIATE_LINK]" target="_blank" rel="noopener sponsored" class="btn-primary">Start Your Free Trial →</a>
+        <p style="margin-top: 16px; font-size: 13px;">30-day trial • No credit card required • Instant setup</p>
+    </div>
+</section>
+
+<section class="advisory-banner">
+    <div class="container">
+        <h4>Building an EU R&D Consortium or Open Innovation Call?</h4>
+        <p>Our team assists innovation hubs, university spinouts, and project coordinators in configuring custom outreach and digital campaign infrastructure under the ARCHES 4-D Framework.</p>
+        <a href="mailto:partnerships@arches-centroricerca.org?subject=ARCHES%20Ecosystem%20Infrastructure%20Inquiry" class="btn-advisory">
+            ✉️ Contact Advisory Team: partnerships@arches-centroricerca.org
+        </a>
     </div>
 </section>
 
 <footer>
-    <div class="footer-links">
-    <a href="docs/privacy.html">Privacy Policy</a>
-    <a href="docs/terms.html">Terms of Service</a>
-    <a href="https://trymoo.moosend.com/uh78zyi9rz15" target="_blank" rel="noopener sponsored" style="color: var(--gray); text-decoration: underline;">moosend.com</a>
-</div>
-        <div class="disclosure">
-            <strong>FTC Affiliate Disclosure & ARCHES Compliance Notice:</strong> This bridge page is an independent asset created by the ARCHES Innovation Ecosystem Management for educational purposes under the ARCHES 4-D Framework (DEVELOP Phase). This site contains affiliate links. If you click on the <a href="https://trymoo.moosend.com/uh78zyi9rz15" target="_blank" rel="noopener sponsored">Moosend referral link</a> and make a purchase, we may receive a commission at no additional cost to you. Moosend® is a registered trademark of Moosend Ltd. and is not affiliated with ARCHES. We do not provide legal or data protection advice; please review Moosend's official GDPR documentation. Results related to deliverability and conversion are illustrative and depend on list quality and implementation.
+    <div class="container">
+        <div class="footer-links">
+            <a href="docs/privacy.html">Privacy Policy</a>
+            <a href="docs/terms.html">Terms of Service</a>
+            <a href="[INSERT_MOOSEND_AFFILIATE_LINK]" target="_blank" rel="noopener sponsored" style="color: var(--gray); text-decoration: underline;">moosend.com</a>
         </div>
-        <p style="margin-top: 16px;">© 2026 ARCHES Innovation Ecosystem. All rights reserved. | DEVELOP Phase Infrastructure.</p>
+        <div class="disclosure">
+            <strong>FTC Affiliate Disclosure & ARCHES Compliance Notice:</strong> This bridge page is an independent asset created by the ARCHES Innovation Ecosystem Management for educational purposes under the ARCHES 4-D Framework. This site contains affiliate links to Moosend. If you click and sign up, we may receive a commission at no extra cost to you. Moosend® is a registered trademark of Sitecore.
+        </div>
+        <p style="margin-top: 16px;">© 2026 ARCHES Innovation Ecosystem. All rights reserved. | Nurturing & Email Infrastructure.</p>
     </div>
 </footer>
 
