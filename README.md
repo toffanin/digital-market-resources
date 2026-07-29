@@ -33,3 +33,39 @@ Every resource in this suite is deployed according to our four operational pilla
 │ AI Market Research│ Dynamic Landing   │ Multichannel Cold │ Automated  │
 │ & Target Data     │ Infrastructure    │ Sequences & Sync  │ Operations │
 └───────────────────┴───────────────────┴───────────────────┴────────────┘
+
+## 📂 Repository Structure
+
+```text
+digital-market-resources/
+├── README.md                       # Central repository documentation
+├── reply/
+│   ├── index.html                  # Reply.io outreach bridge page
+│   └── docs/
+│       ├── privacy.html            # Privacy Policy for Reply campaign
+│       └── terms.html              # Terms of Service for Reply campaign
+├── unbounce/
+│   ├── index.html                  # Unbounce landing page bridge page
+│   └── docs/
+│       ├── privacy.html            # Privacy Policy for Unbounce campaign
+│       └── terms.html              # Terms of Service for Unbounce campaign
+├── instapage/
+│   ├── index.html                  # Instapage campaign scaling bridge page
+│   └── docs/
+│       ├── privacy.html            # Privacy Policy for Instapage campaign
+│       └── terms.html              # Terms of Service for Instapage campaign
+├── moosend/
+│   ├── index.html                  # Moosend automated email bridge page
+│   └── docs/
+│       ├── privacy.html            # Privacy Policy for Moosend campaign
+│       └── terms.html              # Terms of Service for Moosend campaign
+├── melio/
+│   ├── index.html                  # Melio financial operations bridge page
+│   └── docs/
+│       ├── privacy.html            # Privacy Policy for Melio campaign
+│       └── terms.html              # Terms of Service for Melio campaign
+└── secrets-of-the-big-dogs/        # Secrets of the Big Dogs campaign
+    ├── index.html                  # Traffic & list-building blueprint page
+    └── docs/
+        ├── privacy.html            # Privacy Policy for Big Dogs campaign
+        └── terms.html              # Terms of Service for Big Dogs campaign
