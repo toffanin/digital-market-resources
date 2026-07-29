@@ -1,31 +1,35 @@
-# Digital Market Resources Hub
+# 🚀 ARCHES Digital Market Resources & Bridge Infrastructure
 
-Welcome to the **Digital Market Resources** repository—a curated collection of high-converting, compliant bridge pages and promotional assets for B2B SaaS, AI automation, and digital marketing platforms hosted via GitHub Pages.
+Welcome to the central repository for **ARCHES Innovation Ecosystem Management** digital resources, campaign bridge infrastructure, and automated partner onboarding pipelines.
 
----
-
-## 🚀 Active Campaigns
-
-| Campaign | Category | Live Bridge Page | Focus / Value Proposition |
-| :--- | :--- | :--- | :--- |
-| **Melio** | B2B Accounts Payable | [View Page](./melio/) | AI-driven B2B payment platform, free ACH transfers, card-pay flexibility, and QuickBooks/Xero sync. |
-| **Reply.io** | AI Sales Engagement | [View Page](./reply/) | Multichannel cold outreach automation, AI email composition, and scalable B2B lead acquisition. |
-| **Secrets of the Big Dogs** | Digital Marketing & Traffic | [View Page](./secrets-of-the-big-dogs/) | Classic 20+ year proven blueprint for automated traffic generation, list-building, and funnel math. |
+This repository hosts standardized deployment endpoints configured under the **ARCHES 4-D Framework** (Discovery, Design, Delivery, Deployment) to accelerate EU project partner acquisition, open call recruitment, and international innovation transfer.
 
 ---
 
-## 📂 Directory Structure
+## 🌐 Live Bridge Pages Index
+
+All pages are live and served via GitHub Pages. Each endpoint features pre-configured affiliate routing, FTC compliance disclaimers, and direct advisory contact integrations:
+
+| Resource / Offer | Category | Focus Area & Functional Role | Live Page Link | Status |
+| :--- | :--- | :--- | :--- | :---: |
+| **Reply.io** | SaaS | AI Multichannel Cold Outreach & Sequence Acceleration | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/reply) | `Active` |
+| **Unbounce** | SaaS | Rapid Landing Page Generation & CRO Testing | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/unbounce/) | `Active` |
+| **Instapage** | SaaS | High-Velocity Campaign Scaling & Personalization | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/instapage/) | `Active` |
+| **Moosend** | SaaS | Automated Email Marketing & Ecosystem Nurturing | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/moosend/) | `Active` |
+| **Melio** | SaaS | B2B Financial Operations & Vendor Payment Workflows | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/melio/) | `Active` |
+| **Secrets of the Big Dogs** | ClickBank | Classic Traffic Generation & List-Building Blueprint | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/secrets-of-the-big-dogs/) | `Active` |
+
+---
+
+## 🏛️ The ARCHES 4-D Framework Architecture
+
+Every resource in this suite is deployed according to our four operational pillars:
 
 ```text
-digital-market-resources/
-├── README.md
-├── index.html                  # Central Resource Hub Landing Page
-├── melio/
-│   ├── index.html              # Melio Bridge Page
-│   └── privacy.html            # Campaign Privacy Policy
-├── reply/
-│   ├── index.html              # Reply.io Bridge Page
-│   └── privacy.html            # Campaign Privacy Policy
-└── secrets-of-the-big-dogs/
-    ├── index.html              # Secrets of the Big Dogs Bridge Page
-    └── privacy.html            # Campaign Privacy Policy
+┌────────────────────────────────────────────────────────────────────────┐
+│                        ARCHES 4-D FRAMEWORK                            │
+├───────────────────┬───────────────────┬───────────────────┬────────────┤
+│   D1 • DISCOVERY  │    D2 • DESIGN    │    D3 • DELIVERY  │ D4 • DEPLOY│
+│ AI Market Research│ Dynamic Landing   │ Multichannel Cold │ Automated  │
+│ & Target Data     │ Infrastructure    │ Sequences & Sync  │ Operations │
+└───────────────────┴───────────────────┴───────────────────┴────────────┘
