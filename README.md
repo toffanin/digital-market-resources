@@ -21,18 +21,14 @@ All pages are live and served via GitHub Pages. Each endpoint features pre-confi
 
 ---
 
-## 🏛️ The ARCHES 4-D Framework Architecture
+## ARCHES 4-D Framework Architecture
 
-Every resource in this suite is deployed according to our four operational pillars:
-
-```text
-┌────────────────────────────────────────────────────────────────────────┐
-│                        ARCHES 4-D FRAMEWORK                            │
-├───────────────────┬───────────────────┬───────────────────┬────────────┤
-│   D1 • DISCOVERY  │    D2 • DESIGN    │    D3 • DELIVERY  │ D4 • DEPLOY│
-│ AI Market Research│ Dynamic Landing   │ Multichannel Cold │ Automated  │
-│ & Target Data     │ Infrastructure    │ Sequences & Sync  │ Operations │
-└───────────────────┴───────────────────┴───────────────────┴────────────┘
+| Phase | Stage | Operational Focus | Primary Tools / Enablers |
+| :--- | :--- | :--- | :--- |
+| **01** | **DISCOVER** | Multi-channel lead generation, market research & audience identification | Reply.io, Scraping, Data Enrichment |
+| **02** | **DISPLAY** | Dynamic conversion endpoints, landing page positioning & offer framing | Unbounce, Instapage, Custom Bridge Pages |
+| **03** | **DEVELOP** | Lead nurturing, automated workflow triggers & strategic relationship building | Moosend, CRM, Automated Email Drips |
+| **04** | **DEPLOY** | Frictionless onboarding, payments & cross-border commercial execution | Melio, Stripe, Enterprise Contracts |
 
 ## 📂 Repository Structure
 
