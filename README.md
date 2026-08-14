@@ -17,7 +17,6 @@ All pages are live and served via GitHub Pages. Each endpoint features pre-confi
 | **Instapage** | SaaS | High-Velocity Campaign Scaling & Personalization | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/instapage/) | `Active` |
 | **Moosend** | SaaS | Automated Email Marketing & Ecosystem Nurturing | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/moosend/) | `Active` |
 | **Melio** | SaaS | B2B Financial Operations & Vendor Payment Workflows | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/melio/) | `Active` |
-| **Secrets of the Big Dogs** | ClickBank | Classic Traffic Generation & List-Building Blueprint | [Launch Page ↗](https://toffanin.github.io/digital-market-resources/secrets-of-the-big-dogs/) | `Active` |
 
 ---
 
