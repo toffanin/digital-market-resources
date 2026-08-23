@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reply.io | ARCHES 4-D Framework - AI Multichannel Outreach & Campaign Acceleration</title>
     <meta name="description" content="Automate AI-driven cold email sequences, LinkedIn outreach, and ecosystem recruitment for EU R&D calls with Reply.io.">
+    
+    <!-- Google tag (gtag.js) - Replace G-XXXXXXXXXX with your actual Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2422F411DF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2422F411DF');
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -158,6 +169,40 @@
         <p style="margin-top: 16px;">© 2026 ARCHES Innovation Ecosystem. All rights reserved. | Outreach & Campaign Acceleration.</p>
     </div>
 </footer>
+
+<script>
+  // AUTOMATIC UTM FORWARDING & GA4 OUTBOUND CLICK TRACKING
+  window.addEventListener('DOMContentLoaded', () => {
+    const currentParams = new URLSearchParams(window.location.search);
+    const affiliateLinks = document.querySelectorAll('a[href*="get.reply.io"]');
+
+    affiliateLinks.forEach(link => {
+      // 1. Forward incoming UTM parameters to the target URL
+      if (currentParams.toString()) {
+        try {
+          const finalUrl = new URL(link.href);
+          currentParams.forEach((value, key) => {
+            finalUrl.searchParams.append(key, value);
+          });
+          link.href = finalUrl.toString();
+        } catch (e) {
+          console.error("Error setting affiliate link parameters:", e);
+        }
+      }
+
+      // 2. Fire GA4 outbound event when clicked
+      link.addEventListener('click', () => {
+        if (typeof gtag === 'function') {
+          gtag('event', 'click_affiliate_cta', {
+            'event_category': 'Outbound',
+            'event_label': link.href,
+            'transport_type': 'beacon'
+          });
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
