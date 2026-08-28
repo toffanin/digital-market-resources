@@ -3,15 +3,15 @@
   <!-- Root Hub Page -->
   <url>
     <loc>https://toffanin.github.io/digital-market-resources/</loc>
-    <lastmod>2026-08-27</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Unbounce Bridge Page -->
   <url>
     <loc>https://toffanin.github.io/digital-market-resources/unbounce/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -22,5 +22,19 @@
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Legal & Compliance Documentation -->
+  <url>
+    <loc>https://toffanin.github.io/digital-market-resources/docs/privacy.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://toffanin.github.io/digital-market-resources/docs/terms.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
