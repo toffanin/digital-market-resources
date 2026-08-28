@@ -15,4 +15,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Moosend Bridge Page -->
+  <url>
+    <loc>https://toffanin.github.io/digital-market-resources/moosend/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
